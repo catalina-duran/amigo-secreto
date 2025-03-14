@@ -60,7 +60,7 @@ function sortearAmigo() {
     const indiceAleatorio = Math.floor(Math.random() * amigosDisponibles.length);
     const amigoSorteado = amigosDisponibles.splice(indiceAleatorio, 1)[0];
 
-    document.getElementById("resultado").innerHTML += `<li>🎉 ${amigoSorteado} es el amigo secreto! 🎁</li>`;
+    document.getElementById("resultado").innerHTML += `<li> ${amigoSorteado} es el amigo secreto! 🎁</li>`;
 
     lanzarConfeti();
     actualizarLista();
