@@ -1,0 +1,394 @@
+:root {
+    --color-primary: #F2EE57;
+    --color-secondary: #2C0B5A;
+    --color-tertiary: #5D27C2;
+    --color-button: #8138e8;
+    --color-button-hover: #F2EE57;
+    --color-text: #000000;
+    --color-white: #251435;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-block-end: 30px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* Banner */
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+/* Sección de entrada */
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px;
+    width: 100%;
+    height: 100%; 
+    box-sizing: border-box; 
+}
+
+
+
+
+.footer-container {
+    width: 100%;
+    
+    font-family: "Inter", sans-serif;
+    background-color: var(--color-tertiary);
+    color: var(--color-white);
+    padding: 3%;
+    border-radius: 0 0 3rem 3rem;
+    text-align: center;
+    text-emphasis-color: var(--color-white);
+}
+
+/* Títulos */
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Contenedores de entrada y botón */
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+/* Barra de texto */
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+.button-container {
+    width: 300px;
+    justify-content: center;
+}
+
+/* Estilos de botón */
+button {
+    padding: 15px 30px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Botón Añadir */
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.name-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.name-list li {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+.name-list li button {
+    background-color: rgb(203, 89, 81);
+    color: white;
+    padding: 10px;
+    border-radius: 60%;
+    border-color: transparent;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px; 
+}
+
+.name-list li button:hover {
+    background-color: darkred;
+}
+
+.result-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+    max-width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.result-list li {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+/* Botón de sortear */
+.button-draw {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
+.button-draw img {
+    margin-right: 40px;
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Botón de nuevo sorteo */
+.button-reset {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 10px 40px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
+.button-reset img {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.button-reset:hover {
+    background-color: var(--color-button-hover);
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.result-text {
+    flex: 1;  
+    margin-right: 10px;  
+}
+
+.toggle-text {
+    display: inline-block;
+    padding: 5px 10px;
+    
+    color: rgb(33, 2, 39);
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+
+
+.toggle-text.ocultar {
+    background-color: #f44336; 
+}
+
+
+
+.toggle-text:focus {
+    outline: none;
+}
+
+.mensaje-final {
+    
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 20px;
+    width: 100%;
+    color: #eef0f3;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .input-wrapper {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-name {
+        width: 80%;
+        padding: 12px;
+        border-radius: 25px;
+        margin-bottom: 10px;
+    }
+
+    .button-add {
+        width: 80%;
+        padding: 12px;
+        border-radius: 25px;
+        margin-top: 10px;
+    }
+
+    .input-section {
+        flex: 100%;
+        border-radius: 10px;
+        padding: 20px;
+    }
+
+    .button-draw,
+    .button-reset {
+        width: 80%;
+        padding: 12px;
+    }
+
+    .name-list,
+    .result-list {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .name-list li,
+    .result-list li {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .input-name {
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 25px;
+    }
+
+    .button-add {
+        width: 90%;
+        padding: 10px;
+        border-radius: 25px;
+    }
+
+    .button-draw,
+    .button-reset {
+        width: 90%;
+        padding: 12px;
+    }
+
+    .name-list li,
+    .result-list li {
+        font-size: 14px;
+    }
+
+    .footer-container {
+        font-size: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .input-section {
+            flex: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            padding: 20px;
+            width: 100%;
+            height: auto; 
+        }
+    }
+    
+}
