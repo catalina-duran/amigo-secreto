@@ -81,7 +81,7 @@ function reiniciarSorteo() {
 
 function lanzarConfeti() {
     confetti({
-        particleCount: 100,
+        particleCount: 99,
         spread: 70,
         origin: { y: 0.6 }
     });
