@@ -55,6 +55,9 @@ git clone https://github.com/catalina-duran/amigo-secreto.git
 cd amigo-secreto
 
 # Abre el archivo index.html en tu navegador
+start index.html  # En Windows
+open index.html   # En macOS
+xdg-open index.html  # En Linux
 ```
 
 ---
