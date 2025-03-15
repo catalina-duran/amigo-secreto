@@ -65,7 +65,7 @@ open index.html   # En macOS
 ```
 xdg-open index.html  # En Linux
 ```
-```
+
 
 ---
 
