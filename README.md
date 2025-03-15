@@ -50,14 +50,21 @@ Si prefieres ejecutar la aplicación en tu entorno local, sigue estos pasos:
 ```sh
 # Clona el repositorio
 git clone https://github.com/catalina-duran/amigo-secreto.git
-
+```
+```
 # Accede al directorio del proyecto
 cd amigo-secreto
-
+```
+```
 # Abre el archivo index.html en tu navegador
 start index.html  # En Windows
+```
+```
 open index.html   # En macOS
+```
+```
 xdg-open index.html  # En Linux
+```
 ```
 
 ---
